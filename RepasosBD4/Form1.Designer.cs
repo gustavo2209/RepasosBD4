@@ -100,6 +100,7 @@ namespace RepasosBD4
             this.nuevoRegistroToolStripMenuItem.Name = "nuevoRegistroToolStripMenuItem";
             this.nuevoRegistroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoRegistroToolStripMenuItem.Text = "Nuevo Registro";
+            this.nuevoRegistroToolStripMenuItem.Click += new System.EventHandler(this.nuevoRegistroToolStripMenuItem_Click);
             // 
             // retirarRegistroToolStripMenuItem
             // 
@@ -123,12 +124,14 @@ namespace RepasosBD4
             this.entreRangoDeFechasToolStripMenuItem.Name = "entreRangoDeFechasToolStripMenuItem";
             this.entreRangoDeFechasToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.entreRangoDeFechasToolStripMenuItem.Text = "Entre rango de fechas";
+            this.entreRangoDeFechasToolStripMenuItem.Click += new System.EventHandler(this.entreRangoDeFechasToolStripMenuItem_Click);
             // 
             // entreRangoDeHorasToolStripMenuItem
             // 
             this.entreRangoDeHorasToolStripMenuItem.Name = "entreRangoDeHorasToolStripMenuItem";
             this.entreRangoDeHorasToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.entreRangoDeHorasToolStripMenuItem.Text = "Entre rango de horas";
+            this.entreRangoDeHorasToolStripMenuItem.Click += new System.EventHandler(this.entreRangoDeHorasToolStripMenuItem_Click);
             // 
             // entreRangoDeFechasYHorasToolStripMenuItem
             // 

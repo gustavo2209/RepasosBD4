@@ -48,6 +48,58 @@ namespace RepasosBD4
 
         private void retirarRegistroToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            bool msg = false;
+
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.GetType() == typeof(FormQry))
+                {
+                    formQry = (FormQry)form;
+                    formQry.Activate();
+                    formQry.RetirarFila();
+
+                    msg = false;
+                    break;
+                }
+                else
+                {
+                    msg = true;
+                }
+            }
+
+            if (msg)
+            {
+                MessageBox.Show("Para retirar active el formulario");
+            }
+        }
+
+        private void nuevoRegistroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormIns formIns = new FormIns(this, formQry);
+
+            formIns.MdiParent = this;
+            formIns.Show();
+        }
+
+        private void entreRangoDeFechasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.GetType() == typeof(FechasReport))
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            FechasReport fechasReport = new FechasReport(this);          
+            fechasReport.MdiParent = this;
+            fechasReport.Show();
+            fechasReport.BringToFront();
+        }
+
+        private void entreRangoDeHorasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }
