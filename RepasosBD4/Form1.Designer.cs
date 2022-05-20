@@ -68,8 +68,9 @@ namespace RepasosBD4
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // mantenimientoToolStripMenuItem
             // 
@@ -87,6 +88,7 @@ namespace RepasosBD4
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultaToolStripMenuItem.Text = "Consulta";
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -104,6 +106,7 @@ namespace RepasosBD4
             this.retirarRegistroToolStripMenuItem.Name = "retirarRegistroToolStripMenuItem";
             this.retirarRegistroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.retirarRegistroToolStripMenuItem.Text = "Retirar Registro";
+            this.retirarRegistroToolStripMenuItem.Click += new System.EventHandler(this.retirarRegistroToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -140,10 +143,14 @@ namespace RepasosBD4
             this.BackgroundImage = global::RepasosBD4.Properties.Resources.head_bg27;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Horas y Fechas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
