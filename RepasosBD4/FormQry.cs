@@ -43,6 +43,7 @@ namespace RepasosBD4
             da.Fill(ds);
 
             dataGridView1.DataSource = ds.Tables[0];
+
         }
 
         public void RetirarFila()
